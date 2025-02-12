@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trái Cây Đặc Sản Bến Tre</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #27ae60;
+        }
+        
+        nav ul li {
+            padding: 0.8rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        main {
+            padding-top: 100px;
+        }
+        
+        section {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        #home img {
+            width: 50%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        
+        .fruit-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .fruit-item {
+            text-align: center;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .fruit-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .fruit-item img {
+            max-width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .fruit-item h3 {
+            margin: 1rem 0;
+        }
+        
+        #contact {
+            background-color: #e8f4f8;
+        }
+        
+        footer {
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Trái Cây Đặc Sản Bến Tre</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#fruits">Sản Phẩm</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <img src="https://tourhot24h.vn/wp-content/uploads/2019/09/con-phung-2.jpg" alt="Bến Tre">
+            <h2>Chào mừng đến với Trái Cây Bến Tre</h2>
+            <p>Khám phá hương vị tươi ngon từ vườn trái cây Bến Tre</p>
+        </section>
+
+        <section id="fruits">
+            <h2>Sản Phẩm Của Chúng Tôi</h2>
+            <div class="fruit-list">
+                <div class="fruit-item">
+                    <img src="https://bizweb.dktcdn.net/100/482/702/products/3-36e7351b-9b55-4c96-9270-8909b09ffde0.jpg?v=1693977014573" alt="Dừa Bến Tre">
+                    <h3>Dừa Xiêm</h3>
+                    <p>Ngọt mát tự nhiên</p>
+                    <p><strong>Xuất xứ:</strong> Bến Tre, Việt Nam</p>
+                    <p><strong>Giới thiệu:</strong> Dừa Xiêm Bến Tre nổi tiếng với nước dừa ngọt mát và cơm dừa mềm, thơm ngon. Đây là loại dừa được trồng nhiều ở vùng đất Bến Tre, có hương vị đặc trưng mà không loại dừa nào sánh được.</p>
+                    <p><strong>Lợi ích:</strong> Giúp cung cấp nước và điện giải cho cơ thể, hỗ trợ tiêu hóa và làm đẹp da.</p>
+                </div>
+                <div class="fruit-item">
+                    <img src="https://cdn.tgdd.vn/Files/2022/04/27/1428700/sau-rieng-cai-mon-la-gi-cach-chon-sau-rieng-cai-mon-ngon-202204270850246733.jpg" alt="Sầu Riêng">
+                    <h3>Sầu Riêng</h3>
+                    <p>Cơm dày, hạt lép</p>
+                    <p><strong>Xuất xứ:</strong> Cái Mơn, Bến Tre</p>
+                    <p><strong>Giới thiệu:</strong> Sầu Riêng Cái Mơn được biết đến là một trong những giống sầu riêng ngon nhất miền Nam. Cơm sầu riêng có độ dày vừa phải, hạt lép, vị ngọt, mùi thơm đặc trưng, được yêu thích bởi những người sành ăn.</p>
+                    <p><strong>Lợi ích:</strong> Cung cấp năng lượng, hỗ trợ sức khỏe tim mạch và tiêu hóa. Ngoài ra, sầu riêng cũng được dùng để chế biến nhiều món ăn đặc sản như kem sầu riêng, bánh sầu riêng.</p>
+                </div>
+                <div class="fruit-item">
+                    <img src="https://lh5.googleusercontent.com/eqeFX394yUF84JSfkZt4rAyWT_-ROEvrxwKzwrNOi6agedUdRujAmXKeo2sJkMnrwsh45dESuoWrDnY22805n0NRsOb8rJ4zJ-17aS-mh-Ff3ZNdji1I68HalkF9gOfay99KIMvkmp2QAkAJKusXMDI" alt="Chôm Chôm">
+                    <h3>Chôm Chôm</h3>
+                    <p>Ngọt lịm, mọng nước</p>
+                    <p><strong>Xuất xứ:</strong> Bến Tre</p>
+                    <p><strong>Giới thiệu:</strong> Chôm Chôm Bến Tre có vị ngọt lịm và rất mọng nước. Trái chôm chôm có vỏ ngoài đỏ, hình cầu rất đặc biệt, bên trong là những tép quả mọng nước và có độ ngọt tự nhiên.</p>
+                    <p><strong>Lợi ích:</strong> Cung cấp vitamin C, giúp tăng cường hệ miễn dịch và làm đẹp da. Ngoài ra, chôm chôm cũng hỗ trợ tốt cho hệ tiêu hóa và giảm căng thẳng.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Liên Hệ Chúng Tôi</h2>
+            <div>
+                <p>Điện thoại: 0123-456-789</p>
+                <p>Email: lienhe@traicaybentre.com</p>
+                <p>Địa chỉ: Bến Tre, Việt Nam</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Trái Cây Bến Tre - Đặc Sản Miền Nam</p>
+    </footer>
+</body>
+
+</html>
